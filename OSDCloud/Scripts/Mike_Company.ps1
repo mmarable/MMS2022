@@ -48,10 +48,6 @@ if ($env:SystemDrive -eq 'X:') {
     $null = Stop-Transcript
     #Start-OSDCloud -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition Enterprise -OSLicense Volume -SkipAutopilot -SkipODT -Restart
     Start-OSDCloud -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -OSLanguage en-us -SkipAutopilot -SkipODT
-
-    # Set the production key
-    Set-WindowsProductKey -Path "c:\" -ProductKey "73N6M-DQ92P-3X7VG-3MHCQ-DV66Y"
-
 }
 #endregion
 
