@@ -56,7 +56,7 @@ https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/abo
 #>
 function Prompt {
     $(if (Test-Path variable:/PSDebugContext) { '[DBG]: ' }
-    else { "[OSDCloud]: " }
+    else { "[Mike-OSDCloud]: " }
     ) + 'PS ' + $(Get-Location) +
     $(if ($NestedPromptLevel -ge 1) { '>>' }) + '> '
 }
